@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome visitors</title>
+    <link rel="stylesheet" href="About.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section>
+      <h1 data-aos="fade-right" data-aos-duration="2500">Ryoko Ryuzen</h1>
+      <img src="Asset_Data/image.png" class="image" data-value="-5" />
+      <h2 data-aos="fade-right" data-aos-duration="2500">As Farda Syarif</h2>
+      <div class="get-in-touch" data-aos="fade-left" data-aos-duration="2500">
+        <a href="#">Get In Touch</a>
+      </div>
+      <div class="knowme" data-aos="fade-right" data-aos-duration="2500">
+        <a href="#">Know About Me</a>
+      </div>
+    </section>
+
+    <img src="Asset_Data/sakura.png" class="image2" data-value="-1" />
+    <img src="Asset_Data/sakura.png" class="image3" data-value="-3" />
+    <img src="Asset_Data/sakura.png" class="image4" data-value="2" />
+    <img src="Asset_Data/sakura.png" class="image5" data-value="5" />
+    <img src="Asset_Data/sakura.png" class="image6" data-value="6" />
+    <img src="Asset_Data/sakura.png" class="image7" data-value="-4" />
+    <img src="Asset_Data/sakura.png" class="image8" data-value="-7" />
+    <div class="cursor"></div>
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 150;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image2").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 150;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image3").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 150;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image4").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 350;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image5").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 350;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image6").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 350;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image7").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 350;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".image8").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 350;
+          var y = (e.clientY * moving_value) / 350;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+      });
+    </script>
+  </body>
+</html>
